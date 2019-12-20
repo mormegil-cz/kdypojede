@@ -25,6 +25,9 @@ namespace KdyPojedeMhd.Web.Controllers
 
         public async Task<IActionResult> Expected(string? id)
         {
+            // 1. get all expected stop times in +/- 2 hours (?)
+            // 2. group by route
+            // 3. for each route: find the nearest vehicle
             var vehiclePositions = await PublicTransportOperations.GetVehiclePositions(golemioConfiguration, 10, 0, true, null, id);
 
             return View((object) JsonConvert.SerializeObject(vehiclePositions));

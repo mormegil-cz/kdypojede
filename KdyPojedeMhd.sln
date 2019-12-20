@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KdyPojedeMhd.Web", "KdyPojedeMhd.Web\KdyPojedeMhd.Web.csproj", "{1C720170-4625-477F-A4F4-5F005EF406B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GolemioApi", "GolemioApi\GolemioApi.csproj", "{A9EB3F52-EDE8-4D02-89A9-1245918CB936}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C720170-4625-477F-A4F4-5F005EF406B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C720170-4625-477F-A4F4-5F005EF406B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C720170-4625-477F-A4F4-5F005EF406B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C720170-4625-477F-A4F4-5F005EF406B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9EB3F52-EDE8-4D02-89A9-1245918CB936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EB3F52-EDE8-4D02-89A9-1245918CB936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EB3F52-EDE8-4D02-89A9-1245918CB936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EB3F52-EDE8-4D02-89A9-1245918CB936}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
