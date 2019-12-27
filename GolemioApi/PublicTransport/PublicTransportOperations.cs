@@ -18,9 +18,9 @@ namespace GolemioApi.PublicTransport
 
         private static string LocalTimeToStr(LocalTime? t) => t?.ToString("hh:mm:ss", CultureInfo.InvariantCulture);
 
-        public static Task<FeatureCollection> GetStopTimes(GolemioConfiguration configuration, string stopId, LocalDate? date, LocalTime? from, LocalTime? to, int? limit, int? offset, bool includeStop)
+        public static Task<List<StopTime>> GetStopTimes(GolemioConfiguration configuration, string stopId, LocalDate? date, LocalTime? from, LocalTime? to, int? limit, int? offset, bool includeStop)
         {
-            return ApiClient.Get<FeatureCollection>(configuration, "v1/gtfs/stoptimes/" + stopId, new Dictionary<string, object?>
+            return ApiClient.Get<List<StopTime>>(configuration, "v1/gtfs/stoptimes/" + stopId, new Dictionary<string, object?>
             {
                 {"date", LocalDateToStr(date)},
                 {"from", LocalTimeToStr(from)},
